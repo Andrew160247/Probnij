@@ -1,0 +1,13 @@
+        public double SC(double R)
+        {
+            return Math.PI * R * R;
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double r1 = double.Parse(textBox1.Text);
+            double r2 = double.Parse(textBox2.Text);
+            double S = SC(r1) - SC(r2) + 2 * SC(r2 / 2.0);
+            label3.Text = S.ToString("F2");
+        }
+    }
+}
